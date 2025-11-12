@@ -1,50 +1,41 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+    Sync Impact Report:
+    - Version change: v0.0.0 -> v1.0.0
+    - Rationale: Initial constitution setup based on user-provided principles.
+    - Added Principles:
+        - 高品質 (High Quality)
+        - 可被測試 (Testable)
+        - 最小可行產品 (Minimum Viable Product - MVP)
+        - 避免過度設計 (Avoid Over-design)
+        - 使用正體中文 (Use Traditional Chinese)
+    - Removed Sections: None
+    - Templates requiring updates:
+        - [ ] .specify/templates/plan-template.md
+        - [ ] .specify/templates/spec-template.md
+        - [ ] .specify/templates/tasks-template.md
+        - [ ] .gemini/commands/speckit.constitution.toml
+-->
+# stock-price-prediction-v02 Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. 高品質 (High Quality)
+交付的產出物必須是高品質的，包括但不限於程式碼、文件和使用者介面。程式碼應遵循專案既有的慣例與風格，力求清晰、高效且易於維護。
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. 可被測試 (Testable)
+所有功能變更或錯誤修復都必須伴隨著對應的測試案例。新增的程式碼應具備高測試覆蓋率，以確保穩定性與可靠性。
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. 最小可行產品 (Minimum Viable Product - MVP)
+專注於實現核心功能，快速交付一個可用的最小可行產品。避免在初期投入過多資源於次要功能。
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. 避免過度設計 (Avoid Over-design)
+設計應恰如其分地滿足當前需求，避免不必要的複雜性與過早的抽象化。遵循 YAGNI (You Ain't Gonna Need It) 原則。
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. 使用正體中文 (Use Traditional Chinese)
+所有與使用者溝通的內容、註解及文件，都必須使用正體中文。
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+對本章程的任何修訂都必須記錄在案、經過團隊批准，並制定遷移計畫。所有開發工作都必須驗證是否符合章程原則。
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-11-12 | **Last Amended**: 2025-11-12
